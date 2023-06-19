@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemple de formulaire</title>
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+  <body>
+
+    <section style="background-color: #040303; color: rgb(254, 254, 254);">
+      <h1>Merci de remplir le formulaire de Contact</h1>
+    </section>
+
+    <form>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" required>
+
+      <label for="age">Age :</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="genre">Genre :</label>
+      <select id="genre" name="genre" required>
+        <option value="homme">Homme</option>
+        <option value="femme">Femme</option>
+        <option value="neutre">Ne se prononce pas</option>
+      </select>
+
+      <label for="pseudo">Pseudo :</label>
+      <input type="text" id="pseudo" name="pseudo" minlength="5" required>
+
+      <label for="email">Adresse email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telephone">Téléphone :</label>
+      <input type="telephone" id="telephone" name="telephone" required>
+
+      <label for="adresse">Adresse :</label>
+      <input type="text" id="adresse" name="adresse" required>
+
+      <label for="codepostal">Code postal :</label>
+      <input type="text" id="codepostal" name="codepostal" required>
+
+      <label for="ville">Ville :</label>
+      <input type="text" id="ville" name="ville" required>
+
+      <label for="visibilite">Visibilité :</label>
+      <select id="visibilite" name="visibilite" required>
+        <option value="public">Public</option>
+        <option value="prive">Privé</option>
+      </select>
+
+      <label for="commentaire">Commentaire :</label>
+      <textarea id="commentaire" name="commentaire" required></textarea>
+
+      <label for="notification">Notifier les réactions par email :</label>
+      <input type="radio" id="notificationOui" name="notification" value="oui"
+        checked>
+      <label for="notificationOui">Oui</label>
+      <input type="radio" id="notificationNon" name="notification" value="non">
+      <label for="notificationNon">Non</label>
+
+      <label for="categorie">Profession :</label>
+      <select id="categorie" name="categorie" required>
+        <option value="choix">Votre choix </option>
+        <option value="agriculture">Agriculture </option>
+        <option value="alimentation">Agroalimentaire</option>
+        <option value="animaux">Animaux</option>
+        <option value="architecture">Architecture</option>
+        <option value="artisanat">Artisanat d'art</option>
+        <option value="artisanat">Design</option>
+        <option value="banque">Banque</option>
+        <option value="biologie">Biologie</option>
+        <option value="biologie">Biologie</option>
+        <option value="autres">Autres</option>
+      </select>
+
+      <label for="loisirs">Loisirs :</label>
+      <select id="loisirs" name="loisirs" required>
+        <option value="choix">Votre choix </option>
+        <option value="lecture">La lecture </option>
+        <option value="artsplastiques">Les arts plastiques </option>
+        <option value="danse">La danse</option>
+        <option value="danse">Le cinéma</option>
+        <option value="danse">Le sport</option>
+        <option value="theatre">Le théâtre</option>
+        <option value="reseauxsociaux">Les réseaux sociaux</option>
+        <option value="voyages">Les voyages</option>
+        <option value="danse">La programmation</option>
+        <option value="hautetechnologie">La haute technologie</option>
+        <option value="autres">Autres</option>
+      </select>
+
+      <label for="conditions">J'accepte les conditions :</label>
+      <input type="checkbox" id="conditions" name="conditions" required>
+
+      <form>
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" required
+          pattern="[a-zA-Z-_]+">
+        <br><br>
+        <label for="password">Le champ mot de passe doit contenir au moins 8
+          caractères suivantes :
+          lettre minuscule, lettre majuscule, chiffre et caractère spécial</label>
+        <input type="password" id="password" name="password" required
+          minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)">
+        <input type="submit" value="Valider">
+      </form>
+      <br><br>
+      <label for="clic">Si vous avez rempli le formulaire merci d'appuyer sur le
+        bouton...</label>
+      <button type="submit">Envoyer</button>
+    </form>
+    
+    <body>
+
+    </html>
